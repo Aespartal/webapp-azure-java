@@ -6,7 +6,8 @@ name: Build and deploy WAR app to Azure Web App - MSLearnAppAzureService
 on:
   push:
     branches:
-      - master
+    - master
+    - develop
   workflow_dispatch:
 
 jobs:
