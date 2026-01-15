@@ -58,6 +58,6 @@ jobs:
         uses: azure/webapps-deploy@v3
         with:
           app-name: 'MSLearnAppAzureService'
-          slot-name: 'staging'
+          slot-name: ${{ github.ref == 'refs/heads/master' && 'production' || 'staging' }}
           package: 'ROOT.war'
           
