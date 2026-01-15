@@ -7,7 +7,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class HolaController {
 
   @GetMapping("/")
-  public String saludo() {
-    return "<h1>¡Hola Azure!</h1><p>Esta es una app Spring Boot desplegada con éxito.</p>";
+  public String home() {
+    return "<h1>¡Bienvenido al Backend en Azure!</h1>" +
+            "<p>Esta es la página de inicio de mi aplicación Spring Boot.</p>" +
+            "<p>Estado: <b>Operativo</b></p>";
   }
 }

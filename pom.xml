@@ -11,7 +11,7 @@
 	<groupId>com.ejemplo</groupId>
 	<artifactId>webapp-azure</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Demo</name>
+	<packaging>war</packaging> <name>Demo</name>
 	<description>Demo App Azure - Spring Boot</description>
 	<url/>
 	<licenses>
@@ -43,6 +43,7 @@
 	</dependencies>
 
 	<build>
+		<finalName>ROOT</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
