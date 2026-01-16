@@ -9,10 +9,11 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ejemplo</groupId>
-	<artifactId>webapp-azure</artifactId>
+	<artifactId>demo-app</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging> <name>Demo</name>
-	<description>Demo App Azure - Spring Boot</description>
+	<packaging>jar</packaging>
+	<name>Demo App</name>
+	<description>Demo App - Spring Boot para despliegues automáticos en Oracle Cloud</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -43,7 +44,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>ROOT</finalName>
+		<finalName>demo-app</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

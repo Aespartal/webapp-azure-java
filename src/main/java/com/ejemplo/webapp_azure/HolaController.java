@@ -8,8 +8,13 @@ public class HolaController {
 
   @GetMapping("/")
   public String home() {
-    return "<h1>¡Bienvenido al Backend en Azure!</h1>" +
-            "<p>Esta es la página de inicio de mi aplicación Spring Boot. v2</p>" +
-            "<p>Estado: <b>Operativo</b></p>";
+    return "<h1>¡Bienvenido a Demo App!</h1>" +
+            "<p>Aplicación Spring Boot desplegada en Oracle Cloud.</p>" +
+            "<p>Status: <b>Activo y corriendo</b></p>";
+  }
+
+  @GetMapping("/health")
+  public String health() {
+    return "{\"status\": \"UP\"}";
   }
 }
