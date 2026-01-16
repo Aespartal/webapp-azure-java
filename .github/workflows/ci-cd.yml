@@ -36,5 +36,6 @@ jobs:
           username: ${{ secrets.REMOTE_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            pkill -f 'app.jar' || true
+            fuser -k 8080/tcp || true
+            mkdir -p /root/app/db
             nohup java -Xmx1024M -jar /root/app/app.jar > /root/app/log.txt 2>&1 &
