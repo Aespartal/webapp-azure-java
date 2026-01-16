@@ -42,8 +42,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /root/app
-            # Forzamos la descarga de la última imagen de Docker Hub
-            docker pull ${{ secrets.DOCKERHUB_USERNAME }}/gestion-turnos-back:latest
-            # Reiniciamos el contenedor del backend usando docker-compose
-            docker-compose up -d backend
+            docker compose pull backend
+            docker compose up -d backend
             docker image prune -f
